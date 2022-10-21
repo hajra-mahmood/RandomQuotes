@@ -1,0 +1,120 @@
+.App { //whole page
+  text-align: center;
+  
+  #quote-box{
+    border-radius: 10px;
+    padding: 25px;
+    //background-color: white;
+    height: 30%;
+    width: 50%;
+    background: rgba(0,0,0, 0.8);
+    backdrop-filter: blur(5px); //glass effect
+    //box-shadow:   10px 10px 20px -10px #bb6262;
+    display: inline-block;
+  }
+  #tweet-quote{
+    float: left;
+    padding-left: 5%;
+    
+  }
+ 
+#new-quote { //button
+  color: pink;
+  //background-color: rgb(255,255,255);
+  opacity: 0.3;
+  border: 1px solid rgba(255,255,255,0.1);
+  //border-radius: 15px;  
+  backdrop-filter: blur(10px);
+  float: right;
+  }
+  #author{
+    margin-left: 56%;
+    font-size: 17px;
+    //border: 2px dotted black;
+    //padding-left: 10%;
+    width: 50%;
+    
+  }
+  #text{
+    font-size: 30px;
+  }
+#text::before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 30px;
+  content: '\f10d'; /*quote left icon*/
+}
+  
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  #quote-box, button {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  
+}
+
+  
+
+
+// color: rgb(155, 89, 182);
+// text-align: center;
+// margin: 0;
+// padding: 0;
+// list-style: none;
+// vertical-align: baseline;
+// display: inline-block;
+// font: normal normal normal 14px/1 FontAwesome;
+// text-rendering: auto;
+// -webkit-font-smoothing: antialiased;
+// transform: translate(0, 0);
+// font-size: 1em;
+// margin-right: 0.4em;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-position: center;
+  background-repeat: repeat-x;
+  //background-blend-mode: darken;
+  //object-fit: scale-down;
+  //background-size: cover;
+   //transition: background-image 0.2s ;
+  transition-delay: 0.2s;
+  font-family: 'Raleway', sans-serif;
+  
+  
+  
+}
+@media only screen and (max-width: 768px) {
+  .App {
+    background-color: black;
+  }
+  #quote-box{
+    width: 70%;
+  }
+ 
+  .App-header{
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 768px){
+  #quote-box{
+   
+    width: 50px;
+    
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
